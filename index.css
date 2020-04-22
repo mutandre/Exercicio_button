@@ -1,136 +1,119 @@
-/*.teste{
+.teste{
 display: grid;
 grid-template-columns: 15px auto 15px;
-grid-template-rows: 15px auto 50px;
-}*/
+grid-template-rows: 300px auto 100px;
+border-top:15px solid rgb(119, 140, 224);
+border-left:15px solid rgb(119, 140, 224);
+border-right:15px solid rgb(119, 140, 224);
+
+}
+
+.header_corpo{
+
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 
 
+}
 .main_container{
+
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer{
+
+    grid-row: 3/4;
+    grid-column: 1/4;
+    background-color: rgb(119, 140, 224);
     display: flex;
     justify-content: center;
-    width: 1000px;
-    height: 1500px;
-    margin:0px 50px 100px 250px;
+    align-items: center;
+    font-weight: bold;
 }
+
 .radius_main{
 
-    width: 900px;
-    height: 200px;
     border: 2px solid gray;
     border-radius: 20px;
-    margin-top: 50px;
+    padding: 30px 20px 25px 20px;
+    margin-bottom: 30px;
 }
 
 .radius_container{
 display: flex;
+list-style-type: none;
 flex-direction: row;
 justify-content:space-around;
 align-items: center;
 width: 900px;
 height: 100px;
-
-}
-
-
-
-/* Ajuste de cabeçalho*/
-.ajsute{
-    display: flex;
-    flex-direction: column;
-     margin-left: 550px;
-     margin-top: 100px;
-   
-
-}
-.titulo{
-display: flex;
-/*margin: -70px;*/
-font-size: 55px;
-color:rgb(119, 140, 224);
-margin: 0px;
+padding-left: 0px;
 
 
 }
 
-.aj{
-
-    margin: 0px;
-    margin-left: 130px;
-}
-.titulo_h3{
-
-    display: flex;
-   
-    font-size: 35px;
-    margin: 0px;
-    margin-left: 70px;
-  
-
-}
-/*------------------------------------------------------------------------*/
 .span_rounded{
-   
-    display: flex;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   font-weight: bold;
-   padding-top: 30px;
-   padding-left: 20px;
-   padding-bottom: 30px;
-
-   /* margin-left: 20px;
-    margin-top: 30px;*/
- 
-
-
-
+     
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+   /* padding-bottom: 30px;*/
 }
+
+
+
+
+/*------------------------------------------------------------------------*/
+
 /*---------------------------------------*/
 
 .bt {
-  
+
+    outline: none;
     border: 2px solid rgb(5, 240, 248);
     background-color: white;
-    color: black;
+    color:  rgb(5, 240, 248);
     padding: 14px 28px;
-   /* width: 120px;
-    height: 50px;*/
     font-size: 16px;
     cursor: pointer;
     border-radius: 30px;
-    text-decoration: none;
+    /*text-decoration: none;*/
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
-.outline{
 
+.outline{
+ 
+  /* background: rgb(5, 240, 248);
+    color: rgb(5, 240, 248);*/
 
 }
 
-.outline:hover{
-
-   /* background: rgb(5, 240, 248); */
-    color: rgb(5, 240, 248);
+.normal {
+    background: rgb(5, 240, 248);
+    color:white ;
 
 }
 .disable_d {
-    border-color: #e7e7e7;
-    /*color: black;*/
+    border-color: white;
+    background:#d9d9d9 ;
+    color:white;
 }
+
 .disable_d:disabled{
-
-    background: #e7e7e7;   
-}
-.disable_d:hover{
-
     background: #e7e7e7; 
-    color: white;
+    color: white;  
 }
-.hove_r {
 
-    border-color: rgb(5, 240, 248);
-    color:black;
-
-}
 
 .hove_r:hover{
     background: rgb(5, 240, 248); 
@@ -145,7 +128,7 @@ margin: 0px;
 
 /*segundo article*/
 
-.btn {
+.btn  {
   
     border: 2px solid rgb(230, 115, 172);
     background-color: white;
@@ -160,6 +143,7 @@ margin: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
+
 
 /*terceiro article*/
 
@@ -182,7 +166,7 @@ margin: 0px;
 /*Quarto article*/
 
 .btnn {
-  
+    outline-style: none;
     border: 2px solid rgb(240, 10, 209);
     background-color: white;
     color:rgb(240, 10, 209);
@@ -195,4 +179,33 @@ margin: 0px;
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
+}
+.no {
+    background: rgb(240, 10, 209);
+    color:white ;
+
+}
+
+.di_d {
+    border-color: white;
+    background:#d9d9d9 ;
+    color:white;
+}
+
+.di_d:disabled{
+
+    background: #e7e7e7; 
+    color: white;  
+}
+
+
+.ho_r:hover{
+    background: rgb(240, 10, 209); 
+    color: white;
+}
+
+.fo_s:focus{
+
+    background: rgb(240, 10, 209); 
+    color: white;
 }
